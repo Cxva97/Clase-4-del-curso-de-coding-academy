@@ -37,3 +37,11 @@ elif edad >=18 and salario <=500 :
     print("paga impuestos del 0.15%")
 else:
     print("no paga impuestos")
+
+if edad >=18 :
+    if salario >500:
+        print("Paga impuestos del 20%")
+    else:
+        print("paga impuestos del 0.15%")
+else:
+    print("no paga impuestos")

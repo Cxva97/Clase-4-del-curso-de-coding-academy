@@ -1,6 +1,6 @@
-#feedback condicionales taller variables estructuradas
-#actividad bucles
-#taller bucles try except
+#feedback condicionales taller bucles
+#actividad variables estructuradas
+#taller try except
 
 """
 feedback
@@ -26,22 +26,43 @@ segun las condiciones que yo le ponga
         else:
             #codigo o bloque a ejecutar
 """
-# si es mayor de edad y tiene mas de 500 de salario paga impuestos
-#si es menor no paga impuestos
 
-edad=int(input("ingrese su edad: "))
-salario=int(input("ingrese su salario: "))
-if edad >=18 and salario >500:
-    print("Paga impuestos del 20%")
-elif edad >=18 and salario <=500 :
-    print("paga impuestos del 0.15%")
-else:
-    print("no paga impuestos")
 
-if edad >=18 :
-    if salario >500:
-        print("Paga impuestos del 20%")
-    else:
-        print("paga impuestos del 0.15%")
-else:
-    print("no paga impuestos")
+#bucles es algo que se repite varias veces en base a una condicion
+# WHILE es mientras #! tratar de no entrar en bucles infinitos
+#menus, control de errores
+# while condicion:
+    # codigo o bloque a ejecutar
+"""while True: #como romper el blucle CRTL + C
+    print("hola")"""
+
+# manejo de errores
+clave = input("ingrese una clave de 3 caracteres: ")
+while len(clave) < 3 :
+    clave = input("Error, ingrese una clave de 3 caracteres: ")
+print("clave aceptada") 
+
+# menu
+while True:
+    print("hola, selecciona una opcion ")
+    print("1. para saludar")
+    print("2. para despedirte")
+    opcion = input("que deseas hacer? :")
+
+    if opcion == "1" :
+        print("Hola, que tengas un buen dia")
+    elif opcion == "2" :
+        print("Adios, vuelve pronto")
+        break
+
+#condicional extra es el match case
+operacion = int(input("ingrese una operacion (1,2,3): "))
+match operacion:
+    case 1:
+        print("hola")
+    case 2:
+        print("adios")
+    case 3: 
+        print("este es el curso de python") 
+
+# for 

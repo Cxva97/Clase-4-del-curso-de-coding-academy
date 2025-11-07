@@ -74,6 +74,27 @@ Finalmente, imprime la URL completa, por ejemplo: www.blog.blog.com/mi-primer-po
 
 titulo = input("ingrese el titulo:")
 url = input("ingresa una url: ")
-slug = titulo.lower().replace(" ", "-") .replace (".","")
+slug = titulo.lower().replace(" ", "-") .replace (".","") 
 urlcompleta = url.strip() + "/" + slug
 print("la url completa es: " + urlcompleta)
+
+
+# si es mayor de edad y tiene mas de 500 de salario paga impuestos
+#si es menor no paga impuestos
+
+edad=int(input("ingrese su edad: "))
+salario=int(input("ingrese su salario: "))
+if edad >=18 and salario >500:
+    print("Paga impuestos del 20%")
+elif edad >=18 and salario <=500 :
+    print("paga impuestos del 0.15%")
+else:
+    print("no paga impuestos")
+
+if edad >=18 :
+    if salario >500:
+        print("Paga impuestos del 20%")
+    else:
+        print("paga impuestos del 0.15%")
+else:
+    print("no paga impuestos")

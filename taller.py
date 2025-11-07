@@ -28,11 +28,11 @@ Para cualquier otra, imprime "Fruta exótica o desconocida ". (Ignora mayúscula
 """
 fruta =input("ingresa el nombre de la fruta: ")
 if fruta == "manzana" :
-    print ("Es una fruta de otoño")
+    print ( fruta + " es una fruta de otoño")
 elif fruta == "banana" or fruta == "platano" :
-    print("es una fuente de potasio")
+    print( fruta + " es una fuente de potasio")
 else:
-    print("fruta exotica o desconocida")
+    print(fruta + " es una fruta exotica o desconocida")
 """
 Aprobación de Crédito: Pide al usuario su ingreso anual (como número entero) y su historial
 crediticio ("bueno", "regular", "malo", como cadena de texto).
@@ -71,3 +71,9 @@ Reemplazar todos los espacios por un guion (-).
 Eliminar el carácter punto (.).
 Finalmente, imprime la URL completa, por ejemplo: www.blog.blog.com/mi-primer-post.
 """
+
+titulo = input("ingrese el titulo:")
+url = input("ingresa una url: ")
+slug = titulo.lower().replace(" ", "-") .replace (".","")
+urlcompleta = url.strip() + "/" + slug
+print("la url completa es: " + urlcompleta)

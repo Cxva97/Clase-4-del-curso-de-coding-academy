@@ -3,6 +3,11 @@ Saludo Personalizado: Pide al usuario su nombre. Si el nombre comienza con la le
 imprime un saludo especial, por ejemplo: "¡Hola {Nombre}, tienes un nombre genial!".
 Si no, simplemente saluda con "Hola {Nombre}". Pista: Usa lower() y la indexación [0].
 """
+nombre = input("ingrese su nombre: ")
+if nombre.lower()[0] == 'a' or nombre.upper()[0] == 'A' :
+    print("Hola " + nombre + " tienes un nombre genial!!")
+else:
+    print("Hola "+ nombre)
 
 """
 Contraseña Segura: Pide al usuario que ingrese una contraseña.

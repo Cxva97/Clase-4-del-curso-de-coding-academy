@@ -41,6 +41,12 @@ El ingreso es mayor o igual a 5000 Y el historial es "bueno".
 En cualquier otro caso, el crédito es RECHAZADO.
 Asegúrate de limpiar el historial crediticio con strip() y lower().
 """
+ingreso = int(input("ingrese su salario anual: "))
+historial = input("ingrese su historial crediticio: ").strip().lower()
+if ingreso >=5000 and historial == "bueno":
+    print("credito APROBADO")
+else:
+    print("credito RECHAZADO")   
 
 """
 Verificador de Archivo: Pide al usuario el nombre de un archivo. Imprime:
@@ -48,6 +54,14 @@ Si el nombre del archivo termina con .py, imprime "Es un archivo Python".
 Si contiene la palabra "reporte" (en cualquier parte), imprime "Es un documento importante".
 Si no cumple ninguna de las anteriores, imprime "Archivo estándar".
 """
+
+nombreDeArchivo = input("ingrese el nombre del archivo: ")
+if nombreDeArchivo.endswith(".py") :
+    print("es un archivo de python")
+elif "reporte" in nombreDeArchivo :
+    print("es documento de reporte importante")
+else:
+    print("archivo estandar")
 
 """Formateador de Título y URL:
 Pide al usuario que ingrese un título (ej: "Mi Primer post") y una URL base (ej: "www.blog.com/&quot;).

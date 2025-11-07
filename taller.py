@@ -5,9 +5,9 @@ Si no, simplemente saluda con "Hola {Nombre}". Pista: Usa lower() y la indexaci�
 """
 nombre = input("ingrese su nombre: ")
 if nombre.lower()[0] == 'a' or nombre.upper()[0] == 'A' :
-    print("Hola " + nombre + " tienes un nombre genial!!")
+    print("Hola " + nombre.capitalize() + " tienes un nombre genial!!")
 else:
-    print("Hola "+ nombre)
+    print("Hola "+ nombre.capitalize())
 
 """
 Contraseña Segura: Pide al usuario que ingrese una contraseña.
@@ -15,12 +15,24 @@ Si la contraseña tiene una longitud menor a 8 caracteres, imprime "Contraseña 
 Si tiene 8 o más, imprime "Contraseña aceptada".
 """
 
+password = input("ingrese una clave:")
+if len(password) < 8:
+    print("clave debil")
+else:
+    print("clave aceptada ")
+
 """Clasificador de Frutas: Pide al usuario el nombre de una fruta.
 Si la fruta es "manzana", imprime "Es una fruta de otoño ".
 Si la fruta es "plátano" o "banana", imprime "Fuente de potasio ".
 Para cualquier otra, imprime "Fruta exótica o desconocida ". (Ignora mayúsculas/minúsculas).
 """
-
+fruta =input("ingresa el nombre de la fruta: ")
+if fruta == "manzana" :
+    print ("Es una fruta de otoño")
+elif fruta == "banana" or fruta == "platano" :
+    print("es una fuente de potasio")
+else:
+    print("fruta exotica o desconocida")
 """
 Aprobación de Crédito: Pide al usuario su ingreso anual (como número entero) y su historial
 crediticio ("bueno", "regular", "malo", como cadena de texto).
